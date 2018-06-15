@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<form action="/" method="POST">
+		<input type="number" name="firstNumber"/>
+		<select name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="^">^</option>
+			<option value="root">root</option>
+			<option value="log">log</option>
+			<option value="sin">sin</option>
+			<option value="cos">cos</option>
+			<option value="tan">tan</option>
+		</select>
+		<input type="number" name="secondNumber" required/>
+		<button type="submit" value="submit">Submit</button>
+		<br/>
+	</form>
+	{{#result}}
+			<div>{{.}}</div>
+	{{/result}}
+</body>
+</html>
